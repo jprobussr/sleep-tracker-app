@@ -9,8 +9,20 @@ const sundayInput = document.getElementById('sunday');
 const idealHoursInput = document.getElementById('idealHours');
 const results = document.getElementById('results');
 
-sleepForm.addEventListener('submit', (event) => {
-  event.preventDefault();
+sleepForm.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-  console.log('clicked');
+  const monday = Number(mondayInput.value);
+  const tuesday = Number(tuesdayInput.value);
+  const wednesday = Number(wednesdayInput.value);
+  const thursday = Number(thursdayInput.value);
+  const friday = Number(fridayInput.value);
+  const saturday = Number(saturdayInput.value);
+  const sunday = Number(sundayInput.value);
+  const idealHours = Number(idealHoursInput.value);
+
+  console.log(monday);
+  console.log(tuesday);
+  console.log(wednesday);
+  console.log(thursday);
 });
