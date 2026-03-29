@@ -26,6 +26,17 @@ sleepForm.addEventListener('submit', (e) => {
 
   const idealSleepHours = idealHours * 7;
 
-  console.log('Actual weekly sleep:', actualSleepHours);
-  console.log('Ideal weekly sleep:', idealSleepHours);
+  let message = '';
+
+  if (actualSleepHours === idealSleepHours) {
+    message = 'You got the perfect amount of sleep this week.';
+  } else if (actualSleepHours > idealSleepHours) {
+    const extraSleep = actualSleepHours - idealSleepHours;
+    message = `You got ${extraSleep} more hours of sleep than you needed this week.`;
+  } else {
+    const sleepDebt = idealSleepHours - actualSleepHours;
+    message = `You should get some rest. You were short by ${sleepDebt}`;
+  }
+
+  console.log(message)
 });
