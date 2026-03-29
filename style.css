@@ -11,7 +11,7 @@
 
   --border: rgba(148, 163, 184, 0.2);
 
-  --radius: 11px;
+  --radius: 16px;
   --container: 40rem;
 }
 
@@ -41,6 +41,7 @@ body {
   background: var(--surface);
   border-radius: var(--radius);
   border: 1px solid var(--border);
+  padding: 1.5rem;
 }
 
 h1 {
@@ -88,6 +89,11 @@ button {
   cursor: pointer;
 }
 
+button,
+input {
+  font: inherit;
+}
+
 button:hover {
   background: var(--accent-hover);
 }
@@ -95,7 +101,7 @@ button:hover {
 .results {
   margin-top: 1.5rem;
   padding: 1rem;
-  background: var(--surface);
+  background: var(--surface-2);
   border-radius: 10px;
   border: 1px solid var(--border);
 }
