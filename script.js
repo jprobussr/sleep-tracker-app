@@ -21,8 +21,11 @@ sleepForm.addEventListener('submit', (e) => {
   const sunday = Number(sundayInput.value);
   const idealHours = Number(idealHoursInput.value);
 
-  console.log(monday);
-  console.log(tuesday);
-  console.log(wednesday);
-  console.log(thursday);
+  const actualSleepHours =
+    monday + tuesday + wednesday + thursday + friday + saturday + sunday;
+
+  const idealSleepHours = idealHours * 7;
+
+  console.log('Actual weekly sleep:', actualSleepHours);
+  console.log('Ideal weekly sleep:', idealSleepHours);
 });
