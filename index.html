@@ -8,7 +8,56 @@
 </head>
 <body>
     
-    
+    <main class="app">
+        <section class="sleep-card">
+            <h1>Sleep Tracker</h1>
+            <p class="intro">Track your weekly sleep and compare it to your ideal goal.</p>
+
+            <form id="sleepForm">
+                <div class="input-group">
+                    <label for="monday">Monday</label>
+                    <input type="number" id="monday" min="0" max="24" step="0.5">
+                </div>
+                <div class="input-group">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="number" id="tuesday" min="0" max="24" step="0.5">
+                </div>
+
+                <div class="input-group">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="number" id="wednesday" min="0" max="24" step="0.5">
+                </div>
+
+                  <div class="input-group">
+                    <label for="thursday">Thursday</label>
+                    <input type="number" id="thursday" min="0" max="24" step="0.5">
+                </div>
+                  <div class="input-group">
+                    <label for="friday">Friday</label>
+                    <input type="number" id="friday" min="0" max="24" step="0.5">
+                </div>
+                  <div class="input-group">
+                    <label for="saturday">Saturday</label>
+                    <input type="number" id="saturday" min="0" max="24" step="0.5">
+                </div>
+                  <div class="input-group">
+                    <label for="sunday">Sunday</label>
+                    <input type="number" id="sunday" min="0" max="24" step="0.5">
+                </div>
+                  <div class="input-group">
+                    <label for="idealHours">Ideal hours per night</label>
+                    <input type="number" id="idealHours" min="0" max="24" step="0.5">
+                </div>
+
+                <button type="submit">Calculate Sleep</button>
+            </form>
+
+            <section id="results" class="results">
+                <h2>Your Results</h2>
+                <p>Results will appear here.</p>
+            </section>
+        </section>
+    </main>
 
     <script src="./script.js"></script>
 </body>
