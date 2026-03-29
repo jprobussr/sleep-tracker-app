@@ -38,5 +38,11 @@ sleepForm.addEventListener('submit', (e) => {
     message = `You should get some rest. You were short by ${sleepDebt}`;
   }
 
-  console.log(message)
+  results.innerHTML = `
+    <h2>Your Results</h2>
+    <p><strong>Actual sleep:</strong> ${actualSleepHours} hours</p>
+    <p><strong>Ideal sleep:</strong> ${idealSleepHours} hours</p>
+    <p><strong>Message:</strong> ${message}</p>
+
+  `;
 });
